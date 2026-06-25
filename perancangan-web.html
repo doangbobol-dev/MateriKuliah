@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perancangan Web - Materi Kuliah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .breadcrumb { font-size: 14px; color: var(--text-muted); margin: 24px 0; display: flex; gap: 8px; align-items: center;}
+        .banner { background: linear-gradient(135deg, var(--primary-blue), #1E3A8A); color: white; padding: 60px 40px; border-radius: var(--radius); margin-bottom: 40px; box-shadow: var(--shadow-hover);}
+        .banner h1 { font-size: 36px; margin-bottom: 16px;}
+        .banner-meta { display: flex; gap: 24px; font-weight: 300;}
+        
+        .material-card { display: flex; align-items: flex-start; gap: 20px; padding: 24px; background: var(--bg-white); border-radius: var(--radius); margin-bottom: 16px; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid #F1F5F9;}
+        .material-card:hover { transform: translateX(8px); border-left: 4px solid var(--primary-blue); }
+        .icon-box { background: #FEE2E2; color: #EF4444; padding: 16px; border-radius: 12px; }
+        .material-info { flex: 1; }
+        .material-info h3 { font-size: 18px; margin-bottom: 4px; color: var(--text-main);}
+        .material-info p { font-size: 14px; color: var(--text-muted); margin-bottom: 12px;}
+        .file-meta { display: flex; gap: 16px; font-size: 12px; color: var(--text-muted); font-weight: 500;}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><i data-lucide="book-open"></i> KuliahTI</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="materi.html" class="active">Materi Kuliah</a></li>
+                <li><a href="profil-dosen.html">Profil Dosen</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Beranda</a> <i data-lucide="chevron-right" size="14"></i> 
+            <a href="mata-kuliah.html">Materi Kuliah</a> <i data-lucide="chevron-right" size="14"></i> 
+            <span style="color: var(--primary-blue); font-weight: 500;">Perancangan Web</span>
+        </div>
+
+        <div class="banner fade-in">
+            <h1>Perancangan Web</h1>
+            <p style="margin-bottom: 24px; font-size: 18px; opacity: 0.9;">Mempelajari konsep desain antarmuka, struktur HTML5, styling CSS3, dan interaktivitas menggunakan JavaScript modern.</p>
+            <div class="banner-meta">
+                <span><i data-lucide="calendar" size="16"></i> Semester 4</span>
+                <span><i data-lucide="book" size="16"></i> 3 SKS</span>
+                <span><i data-lucide="user" size="16"></i> Dr. Putri Mandarani, S.Kom., M.Kom.</span>
+            </div>
+        </div>
+
+        <section style="padding-top: 0;">
+            <h2 style="margin-bottom: 24px;">Daftar Materi Pembelajaran</h2>
+            
+            <div class="material-card fade-in">
+                <div class="icon-box"><i data-lucide="file-text"></i></div>
+                <div class="material-info">
+                    <h3>Materi 1 : Pendahuluan & Konsep Dasar Web</h3>
+                    <p>Pengenalan arsitektur client-server, protokol HTTP, dan perbedaan Front-end vs Back-end.</p>
+                    <div class="file-meta">
+                        <span><i data-lucide="clock" size="14"></i> 10 Feb 2026</span>
+                        <span><i data-lucide="hard-drive" size="14"></i> 2.4 MB</span>
+                    </div>
+                </div>
+                <a href="files/Materi 3. OPERASI BARIS ELEMENTER.pdf" download class="btn btn-primary">
+                <i data-lucide="download" size="16"></i> Download</a>
+            </div>
+
+            <div class="material-card fade-in">
+                <div class="icon-box"><i data-lucide="file-text"></i></div>
+                <div class="material-info">
+                    <h3>Materi 2 : Struktur Semantik HTML5</h3>
+                    <p>Membuat kerangka website menggunakan tag semantik yang baik untuk SEO dan aksesibilitas.</p>
+                    <div class="file-meta">
+                        <span><i data-lucide="clock" size="14"></i> 17 Feb 2026</span>
+                        <span><i data-lucide="hard-drive" size="14"></i> 1.8 MB</span>
+                    </div>
+                </div>
+                <a href="files/Materi 3. OPERASI BARIS ELEMENTER.pdf" download class="btn btn-primary">
+                <i data-lucide="download" size="16"></i> Download</a>
+            </div>
+            
+            </section>
+    </div>
+
+    <footer>...</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

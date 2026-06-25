@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aljabar Linear - Materi Kuliah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .breadcrumb { font-size: 14px; color: var(--text-muted); margin: 24px 0; display: flex; gap: 8px; align-items: center;}
+        .banner { background: linear-gradient(135deg, var(--primary-blue), #1E3A8A); color: white; padding: 60px 40px; border-radius: var(--radius); margin-bottom: 40px; box-shadow: var(--shadow-hover);}
+        .banner h1 { font-size: 36px; margin-bottom: 16px;}
+        .banner-meta { display: flex; gap: 24px; font-weight: 300;}
+        
+        .material-card { display: flex; align-items: flex-start; gap: 20px; padding: 24px; background: var(--bg-white); border-radius: var(--radius); margin-bottom: 16px; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid #F1F5F9;}
+        .material-card:hover { transform: translateX(8px); border-left: 4px solid var(--primary-blue); }
+        .icon-box { background: #FEE2E2; color: #EF4444; padding: 16px; border-radius: 12px; display: flex; align-items: center; justify-content: center;}
+        .material-info { flex: 1; }
+        .material-info h3 { font-size: 18px; margin-bottom: 4px; color: var(--text-main);}
+        .material-info p { font-size: 14px; color: var(--text-muted); margin-bottom: 12px;}
+        .file-meta { display: flex; gap: 16px; font-size: 12px; color: var(--text-muted); font-weight: 500;}
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i data-lucide="book-open"></i> KuliahTI
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="materi.html" class="active">Materi Kuliah</a></li>
+                <li><a href="profil-dosen.html">Profil Dosen</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container">
+        <!-- BREADCRUMB -->
+        <div class="breadcrumb">
+            <a href="index.html">Beranda</a> <i data-lucide="chevron-right" size="14"></i> 
+            <a href="mata-kuliah.html">Materi Kuliah</a> <i data-lucide="chevron-right" size="14"></i> 
+            <span style="color: var(--primary-blue); font-weight: 500;">Aljabar Linear</span>
+        </div>
+
+        <!-- BANNER -->
+        <div class="banner fade-in">
+            <h1>Aljabar Linear</h1>
+            <p style="margin-bottom: 24px; font-size: 18px; opacity: 0.9;">Mempelajari konsep dasar matriks, ruang vektor, determinan, sistem persamaan linear, dan penerapannya dalam ilmu komputasi.</p>
+            <div class="banner-meta">
+                <span><i data-lucide="calendar" size="16"></i> Semester 3</span>
+                <span><i data-lucide="book" size="16"></i> 3 SKS</span>
+                <span><i data-lucide="user" size="16"></i> Dr. Ahmad, S.Kom., M.Kom.</span>
+            </div>
+        </div>
+
+        <!-- DAFTAR MATERI -->
+        <section style="padding-top: 0;">
+            <h2 style="margin-bottom: 24px;">Daftar Materi Pembelajaran</h2>
+            
+            <!-- Materi 1 -->
+            <div class="material-card fade-in">
+                <div class="icon-box"><i data-lucide="file-text"></i></div>
+                <div class="material-info">
+                    <h3>Materi 1 : Pendahuluan</h3>
+                    <p>Pengenalan tentang Aljabar Linear, Sistem Persamaan Linear (SPL), dan metode eliminasi.</p>
+                    <div class="file-meta">
+                        
+                        <span><i data-lucide="hard-drive" size="14"></i> 1.5 MB</span>
+                    </div>
+                </div>
+                <a href="files/Materi 1 Sistem Persamaan Linear.pdf" download class="btn btn-primary">
+                <i data-lucide="download" size="16"></i> Download</a>
+            </div>
+
+            <!-- Materi 2 -->
+            <div class="material-card fade-in">
+                <div class="icon-box"><i data-lucide="file-text"></i></div>
+                <div class="material-info">
+                    <h3>Materi 2 : Konsep Dasar</h3>
+                    <p>Operasi matriks dasar: penjumlahan, perkalian skalar, perkalian matriks, dan transpos.</p>
+                    <div class="file-meta">
+                        <span><i data-lucide="hard-drive" size="14"></i> 2.1 MB</span>
+                    </div>
+                </div>
+                <a href="files/Materi 3. OPERASI BARIS ELEMENTER.pdf" download class="btn btn-primary">
+                <i data-lucide="download" size="16"></i> Download</a>
+            </div>
+
+          
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="logo" style="margin-bottom: 16px;"><i data-lucide="book-open"></i> KuliahTI</h3>
+                    <p style="color: var(--text-muted);">Portal digital terintegrasi untuk mahasiswa Teknik Informatika.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 16px;">Quick Links</h4>
+                    <ul style="color: var(--text-muted); display: flex; flex-direction: column; gap: 8px;">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="materi.html">Materi Kuliah</a></li>
+                        <li><a href="profil-dosen.html">Profil Dosen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 16px;">Kontak</h4>
+                    <p style="color: var(--text-muted);"><i data-lucide="map-pin" size="16"></i> Jl. Khatib Sulaiman, Padang</p>
+                    <p style="color: var(--text-muted);"><i data-lucide="mail" size="16"></i> info@kuliahti.ac.id</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Sistem Informasi Materi Kuliah. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
